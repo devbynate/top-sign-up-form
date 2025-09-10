@@ -9,7 +9,7 @@ body {
 .left {
   position: relative;
   flex: 1.5;
-  background: url(./images/axville-SXGVliZGS7I-unsplash.jpg) no-repeat center
+  background: url(images/axville-SXGVliZGS7I-unsplash.jpg) no-repeat center
     right;
   background-size: cover;
   display: flex;
