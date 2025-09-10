@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign up form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="left">
@@ -12,36 +19,51 @@
       </div>
     </div>
     <div class="right">
-      <p>
-        This is not a real online service! you know you need something tlike
-        this in your life to help you realize your deepest dreams. Sign up now
-        to get started.
-      </p>
-      <p>You <em>know</em> you want to.</p>
+      <div class="right-text">
+        <p>
+          Welcome! This service is a demo project designed to showcase form
+          design and layout. Sign up below to create an account and explore how
+          it works.
+        </p>
+        <p>You <em>know</em> you want to.</p>
+      </div>
       <form>
-        <h2>Let's do this!</h2>
-        <div class="input-container">
-          <label for="firstName">First Name</label>
-          <input type="text" id="firstName" name="firstName" />
+        <p class="form-intro">
+          Fill out the form below to create your account.
+        </p>
+        <div class="form-group">
+          <label for="first">First Name</label>
+          <input type="text" id="first" name="first" />
+        </div>
 
-          <label for="lastName">Last Name</label>
-          <input type="text" id="lastName" name="lastName" />
+        <div class="form-group">
+          <label for="last">Last Name</label>
+          <input type="text" id="last" name="last" />
+        </div>
 
-          <label for="Email">Email</label>
-          <input type="text" id="email" name="email" />
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" />
+        </div>
 
-          <label for="phoneNumber">Phone Number</label>
-          <input type="number" id="number" name="number" />
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" />
+        </div>
 
+        <div class="form-group">
           <label for="password">Password</label>
           <input type="password" id="password" name="password" />
-
-          <label for="password">Confirm Password</label>
-          <input type="password" id="password" />
         </div>
-        <button type="submit">Submit</button>
+
+        <div class="form-group">
+          <label for="confirm">Confirm Password</label>
+          <input type="password" id="confirm" name="confirm" />
+        </div>
+
+        <button type="submit">Create Account</button>
       </form>
-      <p>Already have an account? <a href="#">Log in</a></p>
+      <p class="right-text">Already have an account? <a href="#">Log in</a></p>
     </div>
   </body>
 </html>
